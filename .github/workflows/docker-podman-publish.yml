@@ -18,9 +18,8 @@ env:
   REGISTRY: ghcr.io
   # github.repository as <account>/<repo>
   IMAGE_NAME_POSTFIX: "podman_kustomize"
-  IMAGE_NAME: ${{ github.actor }}/env.IMAGE_NAME_POSTFIX
+  IMAGE_NAME: ${{ github.actor }}/${{ env.IMAGE_NAME_POSTFIX }}
   #IMAGE_NAME: "shclub/podman_kustomize"
-  #IMAGE_REGISTRY: ghcr.io/${{ github.repository_owner }}
 
 
 jobs:
